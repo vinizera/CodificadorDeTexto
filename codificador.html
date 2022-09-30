@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Codificador de Texto</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Codificador de Texto</h1>
+	<hr>
+	<br>
+	<div class="main">
+		<textarea id="input" placeholder="Digite texto aqui..."></textarea>
+		<textarea id="output" placeholder="Texto encriptado aparece aqui" disabled></textarea>
+		<br>
+		<button id="encriptar">encriptar</button>
+		<button id="copiar">copiar</button>
+	</div>
+	
+	<script type="text/javascript">
+		var text = document.getElementById("input").value;
+
+		var code = "";
+
+		function encriptador(text) {
+			for (var i = 0; i <= text.length; i++) {
+				if (text[i] == "e") {
+					code += "enter";
+				}
+				else if (text[i] == "i") {
+					code += "imes";
+				}
+				else if (text[i] == "a") {
+					code += "ai";
+				}
+				else if (text[i] == "o") {
+					code += "ober";
+				}
+				else if (text[i] == "u") {
+					code += "ufat";
+				}
+				else {
+					code += text[i];
+				}
+			}
+		}
+
+		function getCode() {
+			encriptador(text);
+			alert(code);
+		}
+
+		document.getElementById("encriptar").onclick = getCode;
+	</script>
+
+</body>
+</html>

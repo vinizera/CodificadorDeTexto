@@ -1,0 +1,39 @@
+html {
+	background-color: lightgray;
+	font-family: consolas;
+}
+
+.main {
+	width: 980px;
+	display: inline-block;
+	padding-left: 220px;
+}
+
+#input, #output {
+	font-size: 38px;
+	font-family: consolas;
+	height: 400px;
+	resize: none;
+}
+
+#encriptar {
+	display: inline-block;
+	size: 200;
+	height: 45px;
+	width: 100px;
+	margin-top: 5px;
+}
+#copiar {
+	display: inline-block;
+	margin-left: 343px;
+	height: 45px;
+	width: 100px;
+}
+button:hover {
+	background-color: blue;
+	color: white;
+}
+button:active {
+	background-color: lightgray;
+	color: black;
+}
